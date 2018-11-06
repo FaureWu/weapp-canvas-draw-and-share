@@ -1,0 +1,9 @@
+<view class="share {{ visible ? 'show' : '' }}">
+  <view class="content">
+    <canvas class="canvas" canvas-id="share" style="width:{{canvasWidth*2}}rpx;height:{{canvasHeight*2}}rpx" />
+    <view class="footer" style="width:{{canvasWidth*2}}rpx">
+      <view class="save">保存到相册</view>
+      <view class="close">关闭</view>
+    </view>
+  </view>
+</view>
