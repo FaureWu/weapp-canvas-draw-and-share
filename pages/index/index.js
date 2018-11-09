@@ -11,8 +11,11 @@ Page({
     visible: false
   },
   //事件处理函数
-  bindViewTap: function() {
+  show: function() {
     this.setData({ visible: true })
+  },
+  close: function() {
+    this.setData({ visible: false })
   },
   onLoad: function () {
     if (app.globalData.userInfo) {

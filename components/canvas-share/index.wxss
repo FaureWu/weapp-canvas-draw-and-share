@@ -21,6 +21,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.2s ease-in-out;
+  transform-origin: 50% 0;
+}
+
+.share.show .content {
+  transform: translate3d(0, 0, 0);
 }
 
 .share .content .footer {
@@ -55,6 +62,13 @@
 
 .share.show .content .canvas {
   display: inline-block;
+}
+
+.share .canvas-hide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
 }
 
 .share .content .canvas {
